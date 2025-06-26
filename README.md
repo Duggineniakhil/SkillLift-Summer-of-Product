@@ -72,8 +72,8 @@ git clone https://github.com/Duggineniakhil/SkillLift-Summer-of-Product.git
 
 cd skilllift
 
-open index.html  # On macOS
-start index.html # On Windows
+**open index.html  # On macOS**
+**start index.html # On Windows**
 
 # Usage
 **As a Job Seeker**
