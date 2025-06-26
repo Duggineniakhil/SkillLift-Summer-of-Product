@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Seeker Dashboard | SkillLift</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SkillLift</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="dashboardjob.html">My Profile</a>
+                <a href="dashboardjob.html">Projects</a>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Log Out</a>
+                </div>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile-summary">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="John Doe">
+                </div>
+                <h3>John Doe</h3>
+                <p class="title">Frontend Developer</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                <div class="profile-completion">
+                    <div class="completion-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                    <span>75% complete</span>
+                </div>
+                <a href="profile.html" class="btn btn-outline btn-sm">Complete Profile</a>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="dashboard.html">
+                            <i class="fas fa-home"></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html">
+                            <i class="fas fa-project-diagram"></i> Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-award"></i> Skill Badges
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-comments"></i> Endorsements
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-clipboard-check"></i> Skill Tests
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-briefcase"></i> Job Matches
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fas fa-plus"></i> Add Project
+                    </button>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>124</h3>
+                        <p>Profile Views</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>8</h3>
+                        <p>Job Matches</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>5</h3>
+                        <p>Skill Badges</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Endorsements</p>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Your Skill Badges</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="badges-grid">
+                    <div class="badge-card">
+                        <div class="badge-icon advanced">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Advanced</p>
+                    </div>
+                    <div class="badge-card">
+                        <div class="badge-icon intermediate">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React</h3>
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="badge-card">
+                        <div class="badge-icon beginner">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Node.js</h3>
+                        <p>Beginner</p>
+                    </div>
+                    <div class="badge-card">
+                        <div class="badge-icon intermediate">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Recent Projects</h2>
+                    <a href="projects.html" class="view-all">View All</a>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="E-commerce Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Dashboard</h3>
+                            <p>A responsive dashboard for e-commerce analytics with React and Chart.js</p>
+                            <div class="project-links">
+                                <a href="#" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Task Management App">
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A full-stack task management application with React and Node.js</p>
+                            <div class="project-links">
+                                <a href="#" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Recent Endorsements</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="endorsements-list">
+                    <div class="endorsement-card">
+                        <div class="endorser-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sarah Miller">
+                        </div>
+                        <div class="endorsement-content">
+                            <h3>Sarah Miller <span class="endorser-title">Senior Developer at TechCorp</span></h3>
+                            <div class="endorsed-skills">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Problem Solving</span>
+                            </div>
+                            <p class="endorsement-text">"John is an exceptional developer with a keen eye for detail. His JavaScript skills are top-notch, and he consistently delivers high-quality code."</p>
+                            <span class="endorsement-date">2 days ago</span>
+                        </div>
+                    </div>
+                    <div class="endorsement-card">
+                        <div class="endorser-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="endorsement-content">
+                            <h3>Michael Chen <span class="endorser-title">Project Manager at DevSolutions</span></h3>
+                            <div class="endorsed-skills">
+                                <span class="skill-tag">Teamwork</span>
+                                <span class="skill-tag">Communication</span>
+                            </div>
+                            <p class="endorsement-text">"Worked with John on multiple projects. He's a great team player and communicates effectively with both technical and non-technical stakeholders."</p>
+                            <span class="endorsement-date">1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

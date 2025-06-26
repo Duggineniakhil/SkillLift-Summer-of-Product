@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Talent | SkillLift</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SkillLift</a>
+            <div class="nav-links">
+                <a href="Discover.html" class="active">Discover</a>
+                <a href="dashboardjob.html">For Job Seekers</a>
+                <a href="dashboard.html">For Recruiters</a>
+                <div class="auth-buttons">
+                    <button class="btn btn-login" id="loginBtn">Log In</button>
+                    <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero discover-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Skilled Professionals</h1>
+                <p>Find talented individuals based on their actual skills and abilities, not just credentials.</p>
+                <div class="search-bar hero-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search by skills, location, or keywords">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Skills -->
+    <section class="featured-skills">
+        <div class="container">
+            <h2>Popular Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technology</h3>
+                    <div class="skills-list">
+                        <a href="#" class="skill-tag">JavaScript</a>
+                        <a href="#" class="skill-tag">Python</a>
+                        <a href="#" class="skill-tag">React</a>
+                        <a href="#" class="skill-tag">Node.js</a>
+                        <a href="#" class="skill-tag">AWS</a>
+                        <a href="#" class="skill-tag">UI/UX Design</a>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Business</h3>
+                    <div class="skills-list">
+                        <a href="#" class="skill-tag">Project Management</a>
+                        <a href="#" class="skill-tag">Digital Marketing</a>
+                        <a href="#" class="skill-tag">Data Analysis</a>
+                        <a href="#" class="skill-tag">Sales</a>
+                        <a href="#" class="skill-tag">Content Writing</a>
+                        <a href="#" class="skill-tag">SEO</a>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Creative</h3>
+                    <div class="skills-list">
+                        <a href="#" class="skill-tag">Graphic Design</a>
+                        <a href="#" class="skill-tag">Video Editing</a>
+                        <a href="#" class="skill-tag">Photography</a>
+                        <a href="#" class="skill-tag">Illustration</a>
+                        <a href="#" class="skill-tag">3D Modeling</a>
+                        <a href="#" class="skill-tag">Animation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Professionals -->
+    <section class="featured-profiles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Professionals</h2>
+                <a href="#" class="btn btn-outline">View All</a>
+            </div>
+            <div class="profiles-grid">
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J.">
+                    <h3>Sarah J.</h3>
+                    <p class="profile-title">Frontend Developer</p>
+                    <div class="profile-skills">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">UI/UX</span>
+                    </div>
+                    <div class="profile-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> San Francisco, CA</span>
+                        <span><i class="fas fa-briefcase"></i> 3 Projects</span>
+                    </div>
+                    <button class="btn btn-primary">View Profile</button>
+                </div>
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T.">
+                    <h3>Michael T.</h3>
+                    <p class="profile-title">Data Scientist</p>
+                    <div class="profile-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                    <div class="profile-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                        <span><i class="fas fa-briefcase"></i> 5 Projects</span>
+                    </div>
+                    <button class="btn btn-primary">View Profile</button>
+                </div>
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya K.">
+                    <h3>Priya K.</h3>
+                    <p class="profile-title">UX Designer</p>
+                    <div class="profile-skills">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">User Research</span>
+                        <span class="skill-tag">Prototyping</span>
+                    </div>
+                    <div class="profile-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                        <span><i class="fas fa-briefcase"></i> 7 Projects</span>
+                    </div>
+                    <button class="btn btn-primary">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How SkillLift Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Showcase Your Skills</h3>
+                    <p>Create a profile highlighting your real-world projects, skills, and accomplishments.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Get Validated</h3>
+                    <p>Take skill assessments and earn badges to prove your expertise.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Get Discovered</h3>
+                    <p>Let employers find you based on your demonstrated abilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to showcase your skills?</h2>
+            <p>Join thousands of professionals getting hired for what they can do, not just what degree they have.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-large">Sign Up as Job Seeker</button>
+                <button class="btn btn-outline btn-large">I'm a Recruiter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SkillLift</h3>
+                    <p>Connecting talent with opportunity based on real skills and abilities.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>For Job Seekers</h4>
+                    <ul>
+                        <li><a href="#">Create Profile</a></li>
+                        <li><a href="#">Skill Tests</a></li>
+                        <li><a href="#">Job Board</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Recruiters</h4>
+                    <ul>
+                        <li><a href="#">Search Talent</a></li>
+                        <li><a href="#">Post Jobs</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Recruiter Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkillLift. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <!-- Same modal content as in index.html -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
