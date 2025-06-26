@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Profile | SkillLift</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SkillLift</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="dashboardjob.html">Dashboard</a>
+                <a href="search.html">Find Candidates</a>
+                <a href="#">Job Postings</a>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Log Out</a>
+                </div>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile-summary">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Johnson">
+                </div>
+                <h3>Emily Johnson</h3>
+                <p class="title">Talent Acquisition at TechHire</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                <a href="dashboard.html" class="btn btn-outline btn-sm btn-block">
+                    <i class="fas fa-arrow-left"></i> Back to Dashboard
+                </a>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-home"></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            <i class="fas fa-search"></i> Find Candidates
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-alt"></i> Job Postings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i> Saved Candidates
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i> Messages
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="candidate-profile">
+                <div class="profile-header">
+                    <div class="candidate-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Kim">
+                    </div>
+                    <div class="profile-info">
+                        <h1>David Kim</h1>
+                        <p class="title">Frontend Developer</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                        <div class="profile-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Contact Candidate
+                            </button>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-heart"></i> Save Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h2>About</h2>
+                    <p>Passionate frontend developer with 5 years of experience building responsive and accessible web applications. Specialized in React and TypeScript with a strong eye for design and user experience. Committed to writing clean, maintainable code and staying up-to-date with the latest web technologies.</p>
+                </div>
+                
+                <div class="profile-section">
+                    <h2>Skills & Badges</h2>
+                    <div class="skills-badges">
+                        <div class="skill-badge">
+                            <div class="badge-icon advanced">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>JavaScript</h3>
+                                <p>Advanced</p>
+                                <div class="skill-meta">
+                                    <span><i class="fas fa-check-circle"></i> Verified by Skill Test</span>
+                                    <span><i class="fas fa-users"></i> 8 endorsements</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-badge">
+                            <div class="badge-icon advanced">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>React</h3>
+                                <p>Advanced</p>
+                                <div class="skill-meta">
+                                    <span><i class="fas fa-check-circle"></i> Verified by Skill Test</span>
+                                    <span><i class="fas fa-users"></i> 6 endorsements</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-badge">
+                            <div class="badge-icon intermediate">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>HTML5 & CSS3</h3>
+                                <p>Intermediate</p>
+                                <div class="skill-meta">
+                                    <span><i class="fas fa-check-circle"></i> Verified by Skill Test</span>
+                                    <span><i class="fas fa-users"></i> 5 endorsements</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-badge">
+                            <div class="badge-icon intermediate">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Node.js</h3>
+                                <p>Intermediate</p>
+                                <div class="skill-meta">
+                                    <span><i class="fas fa-check-circle"></i> Verified by Skill Test</span>
+                                    <span><i class="fas fa-users"></i> 3 endorsements</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h2>Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="E-commerce Dashboard">
+                            </div>
+                            <div class="project-content">
+                                <h3>E-commerce Dashboard</h3>
+                                <p>A responsive dashboard for e-commerce analytics with React and Chart.js</p>
+                                <div class="project-links">
+                                    <a href="#" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Task Management App">
+                            </div>
+                            <div class="project-content">
+                                <h3>Task Management App</h3>
+                                <p>A full-stack task management application with React and Node.js</p>
+                                <div class="project-links">
+                                    <a href="#" class="link-btn"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h2>Endorsements</h2>
+                    <div class="endorsements-list">
+                        <div class="endorsement-card">
+                            <div class="endorser-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sarah Miller">
+                            </div>
+                            <div class="endorsement-content">
+                                <h3>Sarah Miller <span class="endorser-title">Senior Developer at TechCorp</span></h3>
+                                <div class="endorsed-skills">
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Problem Solving</span>
+                                </div>
+                                <p class="endorsement-text">"David is an exceptional developer with a keen eye for detail. His JavaScript skills are top-notch, and he consistently delivers high-quality code. He's also a great problem solver who can break down complex issues into manageable solutions."</p>
+                                <span class="endorsement-date">2 days ago</span>
+                            </div>
+                        </div>
+                        
+                        <div class="endorsement-card">
+                            <div class="endorser-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="James Wilson">
+                            </div>
+                            <div class="endorsement-content">
+                                <h3>James Wilson <span class="endorser-title">CTO at WebSolutions</span></h3>
+                                <div class="endorsed-skills">
+                                    <span class="skill-tag">Teamwork</span>
+                                    <span class="skill-tag">Communication</span>
+                                </div>
+                                <p class="endorsement-text">"David was instrumental in leading our frontend team through a major redesign. His technical skills are matched by his ability to communicate effectively with both technical and non-technical team members."</p>
+                                <span class="endorsement-date">3 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h2>Contact Candidate</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="Write your message to the candidate..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="job">Select Job Position (optional)</label>
+                            <select id="job">
+                                <option value="">-- Select a job --</option>
+                                <option value="frontend">Senior Frontend Developer</option>
+                                <option value="fullstack">Full Stack Engineer</option>
+                                <option value="ui">UI Developer</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

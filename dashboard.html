@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Dashboard | SkillLift</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SkillLift</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="dashboardjob.html">Find Candidates</a>
+                <a href="#">Job Postings</a>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Log Out</a>
+                </div>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile-summary">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Johnson">
+                </div>
+                <h3>Emily Johnson</h3>
+                <p class="title">Talent Acquisition at TechHire</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                <div class="profile-completion">
+                    <div class="completion-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    <span>90% complete</span>
+                </div>
+                <a href="#" class="btn btn-outline btn-sm">Complete Profile</a>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="dashboard.html">
+                            <i class="fas fa-home"></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            <i class="fas fa-search"></i> Find Candidates
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-alt"></i> Job Postings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i> Saved Candidates
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i> Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-chart-line"></i> Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>Recruiter Dashboard</h1>
+                <div class="header-actions">
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fas fa-plus"></i> Post a Job
+                    </button>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>24</h3>
+                        <p>Active Candidates</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>5</h3>
+                        <p>Open Positions</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>New Messages</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>8</h3>
+                        <p>Saved Profiles</p>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Recommended Candidates</h2>
+                    <a href="search.html" class="view-all">View All</a>
+                </div>
+                
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label for="skills">Skills</label>
+                        <input type="text" id="skills" placeholder="JavaScript, React, etc.">
+                    </div>
+                    <div class="filter-group">
+                        <label for="experience">Experience</label>
+                        <select id="experience">
+                            <option value="">Any</option>
+                            <option value="entry">Entry Level</option>
+                            <option value="mid">Mid Level</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="location">Location</label>
+                        <select id="location">
+                            <option value="">Any</option>
+                            <option value="remote">Remote</option>
+                            <option value="us">United States</option>
+                            <option value="europe">Europe</option>
+                            <option value="asia">Asia</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                
+                <div class="candidates-grid">
+                    <div class="candidate-card">
+                        <div class="candidate-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Kim">
+                        </div>
+                        <div class="candidate-info">
+                            <h3>David Kim</h3>
+                            <p class="title">Frontend Developer</p>
+                            <div class="skills-list">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">TypeScript</span>
+                            </div>
+                            <div class="badge-list">
+                                <span class="badge advanced">Advanced</span>
+                                <span class="badge intermediate">Intermediate</span>
+                            </div>
+                            <p class="bio">Passionate about building responsive and accessible web applications with React.</p>
+                        </div>
+                        <div class="candidate-actions">
+                            <a href="candidate.html" class="btn btn-outline btn-sm">View Profile</a>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="candidate-card">
+                        <div class="candidate-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Chen">
+                        </div>
+                        <div class="candidate-info">
+                            <h3>Sarah Chen</h3>
+                            <p class="title">Full Stack Developer</p>
+                            <div class="skills-list">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">MongoDB</span>
+                            </div>
+                            <div class="badge-list">
+                                <span class="badge advanced">Advanced</span>
+                                <span class="badge intermediate">Intermediate</span>
+                            </div>
+                            <p class="bio">Experienced in building scalable backend systems and RESTful APIs.</p>
+                        </div>
+                        <div class="candidate-actions">
+                            <a href="candidate.html" class="btn btn-outline btn-sm">View Profile</a>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="candidate-card">
+                        <div class="candidate-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael Rodriguez">
+                        </div>
+                        <div class="candidate-info">
+                            <h3>Michael Rodriguez</h3>
+                            <p class="title">UI/UX Designer</p>
+                            <div class="skills-list">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Adobe XD</span>
+                                <span class="skill-tag">User Research</span>
+                            </div>
+                            <div class="badge-list">
+                                <span class="badge advanced">Advanced</span>
+                                <span class="badge beginner">Beginner</span>
+                            </div>
+                            <p class="bio">Specializing in user-centered design and creating intuitive interfaces.</p>
+                        </div>
+                        <div class="candidate-actions">
+                            <a href="candidate.html" class="btn btn-outline btn-sm">View Profile</a>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="candidate-card">
+                        <div class="candidate-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Patel">
+                        </div>
+                        <div class="candidate-info">
+                            <h3>Priya Patel</h3>
+                            <p class="title">Data Scientist</p>
+                            <div class="skills-list">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
+                            <div class="badge-list">
+                                <span class="badge advanced">Advanced</span>
+                                <span class="badge advanced">Advanced</span>
+                            </div>
+                            <p class="bio">Passionate about leveraging data to drive business decisions and build predictive models.</p>
+                        </div>
+                        <div class="candidate-actions">
+                            <a href="candidate.html" class="btn btn-outline btn-sm">View Profile</a>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-envelope"></i> Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>Recent Job Postings</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                
+                <div class="jobs-list">
+                    <div class="job-card">
+                        <div class="job-content">
+                            <h3>Senior Frontend Developer</h3>
+                            <div class="job-meta">
+                                <span><i class="fas fa-building"></i> TechCorp Inc.</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                                <span><i class="fas fa-clock"></i> Posted 2 days ago</span>
+                            </div>
+                            <div class="job-skills">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Redux</span>
+                            </div>
+                            <p class="job-description">We're looking for an experienced frontend developer to lead our UI development team and architect our next-generation web applications.</p>
+                        </div>
+                        <div class="job-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Applicants
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="job-card">
+                        <div class="job-content">
+                            <h3>UX Designer</h3>
+                            <div class="job-meta">
+                                <span><i class="fas fa-building"></i> DesignHub</span>
+                                <span><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                                <span><i class="fas fa-clock"></i> Posted 1 week ago</span>
+                            </div>
+                            <div class="job-skills">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">User Research</span>
+                                <span class="skill-tag">Prototyping</span>
+                            </div>
+                            <p class="job-description">Join our design team to create beautiful, intuitive interfaces for our enterprise clients.</p>
+                        </div>
+                        <div class="job-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Applicants
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
