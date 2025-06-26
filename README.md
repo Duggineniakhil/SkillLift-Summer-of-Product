@@ -1,5 +1,12 @@
 # Summer of Product: Case Study Competition
 # SkillLift - Hiring based on what you can do, not just what's on paper.
+
+# 🧑‍💻 Team
+
+**Team Creed** – HelloPM Case Challenge 2025  
+- Akhil Duggineni  
+- Kuchipudi Yokshith Sairam Chowdary
+
 **Overview**
 SkillLift is a modern hiring platform that focuses on skills rather than traditional credentials. It allows job seekers to showcase their real abilities through verified skill badges, project portfolios, and peer endorsements, while enabling recruiters to find and hire candidates based on demonstrated capabilities.
 
