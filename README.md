@@ -7,6 +7,8 @@
 - Akhil Duggineni  
 - Kuchipudi Yokshith Sairam Chowdary
 
+# Live : https://skilllift.netlify.app/
+
 **Overview**
 SkillLift is a modern hiring platform that focuses on skills rather than traditional credentials. It allows job seekers to showcase their real abilities through verified skill badges, project portfolios, and peer endorsements, while enabling recruiters to find and hire candidates based on demonstrated capabilities.
 
